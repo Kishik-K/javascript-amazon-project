@@ -28,6 +28,7 @@ export function renderOrderSummary(){
 
     cartSummaryHTML += `
       <div class="cart-item-container
+        js-cart-item-container 
         js-cart-item-container-${matchingProduct.id}">
         <div class="delivery-date">
           Delivery date: ${dateString}
@@ -42,7 +43,7 @@ export function renderOrderSummary(){
             <div class="product-price">
               $${formatCurrency(matchingProduct.priceCents)}
             </div>
-            <div class="product-quantity">
+            <div class="product-quantity js-product-quantity-${matchingProduct.id}">
               <span>
                 Quantity: <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
               </span>
@@ -55,7 +56,8 @@ export function renderOrderSummary(){
                 data-product-id="${matchingProduct.id}">
                 Save
               </span>
-              <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProduct.id}">
+              <span class="delete-quantity-link link-primary js-delete-link js-delete-link-${matchingProduct.id}"
+               data-product-id="${matchingProduct.id}">
                 Delete
               </span>
             </div>
@@ -120,10 +122,12 @@ export function renderOrderSummary(){
       });
     });
   function updateCartQuantity() {
-    const cartQuantity = calculateCartQuantity();
-    document.querySelector('.js-return-to-home-link')
-      .innerHTML = `${cartQuantity} items`;
+  const cartQuantity = calculateCartQuantity();
+  const returnToHomeLink = document.querySelector('.js-return-to-home-link');
+  if (returnToHomeLink) { 
+    returnToHomeLink.innerHTML = `${cartQuantity} items`;
   }
+}
   updateCartQuantity();
   document.querySelectorAll('.js-update-link')
     .forEach((link) => {
