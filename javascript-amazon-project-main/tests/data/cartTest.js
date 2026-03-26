@@ -3,6 +3,7 @@ import {addToCart, cart, loadFromStorage} from '../../data/cart.js';
 describe ('Test Suit: addToCart-Tests', () => {
 
   //TEST 1: addToCart should add an existing product to the cart and update the quantity
+
   it('adds an existing product to the cart', () =>{
     spyOn(localStorage, 'setItem');
 
@@ -46,7 +47,7 @@ describe ('Test Suit: addToCart-Tests', () => {
       quantity: 1,
       deliveryOptionId: '1'
     }]));
-    
+
     expect(cart[0].productId).toEqual('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
     expect(cart[0].quantity).toEqual(1);
   });
