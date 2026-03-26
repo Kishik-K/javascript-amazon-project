@@ -11,5 +11,8 @@ describe ('Test Suit: formatCurrency', () => {
   it('rounds up to nearest cent', ()=>{
     expect(formatCurrency(2000.5)).toEqual('20.01');
   });
+  it('rounds down to nearest cent', ()=>{
+    expect(formatCurrency(2000.4)).toEqual('20.00');
+  });
 
 });
