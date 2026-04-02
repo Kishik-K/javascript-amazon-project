@@ -2,16 +2,24 @@
 
 class Cart {
   cartItems;
-  localStorageKey;      //when a propertty is declared without a value, it is undefined and we can uset use ; to it is undefined. We can also assign a default value to it, but in this case we will assign it in the constructor.
+  #localStorageKey;      
+  
+  
+  //when a propertty is declared without a value, it is undefined and we can uset use ; to it is undefined. We can also assign a default value to it, but in this case we will assign it in the constructor.
+
+  //We use # before the Local storagekey to make it a private property. This means that it cannot be accessed outside of the class. It can only be accessed within the class. This is a way to encapsulate the data and prevent it from being modified outside of the class.
+
+  //a property without a # in front is a public property and it can be accessed anywhere(inside and outside the class).
+
 
   constructor(){
     //basically setup code that runs when we create a new instance of the class.
-    this.localStorageKey = 'cart-oop';
-    this.loadFromStorage();
+    this.#localStorageKey = 'cart-oop';
+    this.#loadFromStorage();
   }
   
-   loadFromStorage(){
-  this.cartItems = JSON.parse(localStorage.getItem(this.localStorageKey));
+   #loadFromStorage(){
+    this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey));
 
     if (!this.cartItems) {
       this.cartItems =  [{
@@ -27,7 +35,7 @@ class Cart {
   }
 
    saveToStorage() {
-    localStorage.setItem(this.localStorageKey, JSON.stringify(this.cartItems))
+    localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems))
   }
 
 
