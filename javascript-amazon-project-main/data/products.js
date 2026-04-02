@@ -16,9 +16,6 @@ class Product {
   name;
   rating;
   priceCents;
-  keywords;
-  type;
-  sizeChartLink;
 
   constructor(productDetails){
     this.id = productDetails.id;
@@ -26,9 +23,6 @@ class Product {
     this.name = productDetails.name;
     this.rating = productDetails.rating;
     this.priceCents = productDetails.priceCents;
-    this.keywords = productDetails.keywords;
-    this.type = productDetails.type;
-    this.sizeChartLink = productDetails.sizeChartLink;
   }
 
   getStarsUrl(){
@@ -39,6 +33,8 @@ class Product {
     return `$${formatCurrency(this.priceCents)}`;
   }
 }
+
+
 
 
 
