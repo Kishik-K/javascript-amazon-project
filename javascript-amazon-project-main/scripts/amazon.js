@@ -43,6 +43,8 @@ products.forEach((product) => {
             </select>
           </div>
 
+          ${product.extraInfoHTML()}
+          //polumorphism is when we have a parent class and child class and the child class can override the method of the parent class.
           <div class="product-spacer"></div>
 
           <div class="added-to-cart js-added-to-cart-${product.id}">
