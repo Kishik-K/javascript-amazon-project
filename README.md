@@ -8,18 +8,22 @@ A fully functional Amazon-inspired e-commerce web app built with vanilla JavaScr
 
 ## Screenshots
 
-| Main Page | Checkout |
-|-----------|----------|
-| ![Main Page](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/528a7d0d-9223-4d5c-bc2a-dca3a299d6b2" />
-) | ![Checkout](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/bf02e5ac-43f2-4445-84f7-93ef718305d0" />
-) |
+**Main Page**
+![Main Page](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/14be957c-acd1-4214-a547-8a160fcd1ee6" />
+)
 
-| Orders | Tracking |
-|--------|----------|
-| ![Orders](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5818e556-3f78-4200-b5d6-653965e9f9f9" />
-) | ![Tracking](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6b18a474-fd6e-419a-8b22-ec149656c0c5" />
-) |
+**Checkout**
+![Checkout](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/afcb2ad6-e8a5-451a-bc64-b453ef62b742" />
+)
 
+**Orders**
+![Orders](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/77832848-804b-44e9-8825-a10a875ccf2b" />
+)
+
+**Tracking**
+![Tracking](<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ec8d980a-9b83-4673-adcc-f3db14077cc9" />
+
+)
 ---
 
 ## Features
