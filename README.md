@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f5d11f72-9af1-4e16-abd0-98bb199980a5" /># Amazon Clone 🛒
+# Amazon Clone 🛒
 
 A fully functional Amazon-inspired e-commerce web app built with vanilla JavaScript. No frameworks. No shortcuts. Just raw JS doing real work.
 
