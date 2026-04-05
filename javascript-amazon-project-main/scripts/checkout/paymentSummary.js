@@ -65,8 +65,10 @@ export function renderPaymentSummary() {
         
   `;
 
-  document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;
-
+  document.querySelector(".js-payment-summary").innerHTML =
+    cart.length === 0 ? "" : paymentSummaryHTML;
+  document.querySelector(".js-payment-summary").style.display =
+    cart.length === 0 ? "none" : "block";
   document
     .querySelector(".js-place-order")
     .addEventListener("click", async () => {
