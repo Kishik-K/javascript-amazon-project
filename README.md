@@ -74,6 +74,7 @@ A fully functional Amazon-inspired e-commerce web app built with vanilla JavaScr
 │   ├── orders.js            # Orders page logic
 │   └── tracking.js          # Tracking page logic
 ├── styles/                  # CSS per page and shared components
+├── tests/
 ├── images/                  # Product images and icons
 ├── index.html
 ├── checkout.html
